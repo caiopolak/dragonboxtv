@@ -1,0 +1,10 @@
+{
+  "version": "1.7.9",
+  "build": 179,
+  "download_url": "https://github.com/caiopolak/dragonboxtv/releases/download/v1.8.2/Dragonbox.exe",
+  "hash": "sha256hashaqui",
+  "changelog": "Novidades desta versão:\n- Interface redesenhada\n- Player MPV mais estável\n- Correção de bugs",
+  "release_date": "2026-06-18",
+  "minimum_version": "1.5.0",
+  "mandatory": false
+}
