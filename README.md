@@ -17,7 +17,7 @@ Media player desktop standalone em Python/PyQt6, inspirado em skins Kodi (Arctic
 
 ## Licenciamento
 
-Este projeto é distribuído comercialmente via assinatura. Consulte `core/license_manager.py` e `bot/` para detalhes do sistema de chaves.
+Este projeto é distribuído comercialmente via assinatura. 
 
 ---
 
