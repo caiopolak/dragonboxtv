@@ -1,10 +1,10 @@
 {
-  "version": "1.8.2",
-  "build": 182,
-  "download_url": "https://github.com/caiopolak/dragonboxtv/releases/download/v1.8.2/Dragonbox.exe",
-  "hash": "sha256:849c1bb0534a19984905ffd2cb9411bfd0c0b0df59bac5236b03a4d67ca1a22c",
-  "changelog": "Novidades desta versão:\n- Interface redesenhada\n- Player MPV mais estável\n- Correção de bugs",
-  "release_date": "2026-06-18",
+  "version": "1.8.5",
+  "build": 185,
+  "download_url": "https://github.com/caiopolak/dragonboxtv/releases/download/v1.8.5/DragonboxMediaStreaming-1.8.5.exe",
+  "hash": "certutil-hashfile"Output\DragonboxMediaStreaming-1.8.5.exe"SHA256|findstr/v"SHA256"|findstr/v"CertUtil"",
+  "changelog": "Novidades da versao 1.8.5:\n- Confira o repositorio para detalhes completos.",
+  "release_date": "18/06/2026",
   "minimum_version": "1.7.9",
   "mandatory": false
 }
