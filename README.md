@@ -51,7 +51,7 @@ Todo revendedor pode personalizar thumbnails e fanart de cada menu/categoria via
 Bypass automático de bloqueio de DNS de operadoras (Claro, Vivo, Oi, etc.). Usa DNS over HTTPS para resolver servidores de streaming bloqueados. Funciona tanto no scraping quanto no player MPV.
 
 ### 🔑 Sistema de Licenciamento por Assinatura
-Ativação via key única com validação online (Supabase REST), grace period de 7 dias offline, máximo de 2 dispositivos por chave com machine_id. Cache local criptografado. Ideal para revenda e controle de acesso.
+Ativação via key única com validação online (Supabase REST), grace period de 7 dias offline, máximo de dispositivos por chave com machine_id. ou dispositivo android.
 
 *   **Busca Inteligente:** Encontre qualquer título em segundos usando o motor de busca unificado via TMDB.
 *   **Favoritos:** Salve seus conteúdos para acessar com um clique.
@@ -63,4 +63,4 @@ Ativação via key única com validação online (Supabase REST), grace period d
 ## Licenciamento
 Este projeto é distribuído comercialmente via assinatura. 
 ---
-*Dragonbox v1.8.4 — © 2026 PyNEXUS*
+*Dragonbox v1.8.8 — © 2026 PyNEXUS*
