@@ -1,10 +1,12 @@
 {
-  "version": "1.8.5",
-  "build": 185,
-  "download_url": "https://github.com/caiopolak/dragonboxtv/releases/download/v1.8.5/DragonboxMediaStreaming-1.8.5.exe",
-  "hash": "certutil-hashfile"Output\DragonboxMediaStreaming-1.8.5.exe"SHA256|findstr/v"SHA256"|findstr/v"CertUtil"",
-  "changelog": "Novidades da versao 1.8.5:\n- Confira o repositorio para detalhes completos.",
-  "release_date": "18/06/2026",
+  "version": "1.8.8",
+  "build": 188,
+  "download_url": "https://github.com/caiopolak/dragonboxtv/releases/download/v1.8.8/DragonboxMediaStreaming-1.8.8.exe",
+  "hash": "",
+  "changelog": "Novidades da versao 1.8.8:\n- Conteudo multi-plugin na Home (Brazuca + PluginStreaming + PlutoTV)\n- Interface dos plugins padronizada\n- Menus remotos via GitHub",
+  "release_date": "25/06/2026",
   "minimum_version": "1.7.9",
-  "mandatory": false
+  "mandatory": false,
+  "menus_url": "https://raw.githubusercontent.com/caiopolak/dragonboxtv/main/menus.json",
+  "home_layout_url": ""
 }
