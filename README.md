@@ -5,8 +5,9 @@ Media player desktop standalone, com navegação visual, reprodução MPV, EPG, 
 e licenciamento por assinatura via whatsapp ou discord.
 
 [#CLIQUE AQUI PARA ACESSAR NOSSO SITE](https://dragonboxtv.github.io/site/)
-
+-
 [#CLIQUE AQUI PARA ACESSAR NOSSA LOJA NO DISCORD](https://discord.com/invite/32EpSzEM3j)
+
 ---
 
 ## Arquitetura
