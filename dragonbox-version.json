@@ -1,0 +1,12 @@
+{
+  "version": "1.8.8",
+  "build": 188,
+  "download_url": "https://github.com/caiopolak/dragonboxtv/releases/download/v1.8.8/DragonboxMediaStreaming-1.8.8.exe",
+  "hash": "",
+  "changelog": "Novidades da versao 1.8.8:\n- Cache local de fallback (version + menus)\n- Health Checker de hosts em background\n- ThePirateBay + TorrentGalaxy providers\n- TMDB API key fallback (4 keys)\n- Fila: pop apos sucesso, cooldown removido\n- QueueDialog redesign glassmorphism\n- Player fecha no fim da fila\n- Stall watchdog conectado\n- Widget fila sem duplicacao",
+  "release_date": "25/06/2026",
+  "minimum_version": "1.7.9",
+  "mandatory": false,
+  "menus_url": "https://gist.githubusercontent.com/caiopolak/408d88e12dd0f9ecbae019feae0f8bcb/raw/menus.json",
+  "home_layout_url": ""
+}
