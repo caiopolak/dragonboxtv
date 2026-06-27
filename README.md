@@ -1,8 +1,10 @@
-![Dragonbox Media Streaming](https://raw.githubusercontent.com/caiopolak/dragonboxtv/refs/heads/main/dragonbox_viewer1.png)
+![Dragonbox Media Streaming](https://raw.githubusercontent.com/dragonboxtv/site/refs/heads/main/dragonbox_viewer1.png)
 # Dragonbox 2026 — Media Streaming Desktop App
 
-Media player desktop standalone em Python/PyQt6, inspirado em skins Kodi (Arctic Horizon 2), com navegação visual, reprodução MPV, EPG, DNS bypass e licenciamento por assinatura.
+Media player desktop standalone, com navegação visual, reprodução MPV, EPG, DNS bypass
+e licenciamento por assinatura via whatsapp ou discord.
 
+[#CLIQUE AQUI PARA ACESSAR](https://dragonboxtv.github.io/site/)
 ---
 
 ## Arquitetura
@@ -10,8 +12,8 @@ Media player desktop standalone em Python/PyQt6, inspirado em skins Kodi (Arctic
 ```
 # Dragonbox Media Player — Experiência Premium de Entretenimento
 
-O **Dragonbox** é a solução definitiva para quem busca uma central de mídia potente, elegante e extremamente fácil de usar.
-Inspirado nas skins mais famosas do ecossistema Kodi (como a Arctic Horizon 2), o Dragonbox foi reconstruído do zero em Python/PyQt6 para oferecer performance superior como um aplicativo nativo para Windows.
+O **Dragonbox** é a solução definitiva para quem busca uma central de mídia potente,
+ com todos conteúdos de streamings e canais de tv ao vivo, elegante e extremamente fácil de usar.
 
 ---
 
@@ -25,11 +27,11 @@ Abre instantaneamente e processa listas de milhares de itens sem engasgos.
 Design limpo, minimalista e focado na experiência do usuário.
 Navegue por seus filmes, séries e canais favoritos com fluidez visual digna de grandes serviços de streaming (Netflix/Disney+).
 
-### 🎬 O Poder do Brazuc4 Integrado
+### 🎬 O Poder do cinema na sua mão.
 Acesso direto ao catálogo mais completo do Brasil.
 Filmes em 4K, Séries atualizadas diariamente, Animes, Desenhos e Novelas — tudo com resolvers VIP que garantem a melhor fonte disponível.
 
-### 📺 TV Ao Vivo e Esportes (DaddyLive)
+### 📺 TV Ao Vivo e Esportes
 Guia de programação (EPG) em tempo real.
 Nunca perca um jogo ou seu programa favorito com a integração de canais mundiais e nacionais.
 
@@ -51,7 +53,7 @@ Todo revendedor pode personalizar thumbnails e fanart de cada menu/categoria via
 Bypass automático de bloqueio de DNS de operadoras (Claro, Vivo, Oi, etc.). Usa DNS over HTTPS para resolver servidores de streaming bloqueados. Funciona tanto no scraping quanto no player MPV.
 
 ### 🔑 Sistema de Licenciamento por Assinatura
-Ativação via key única com validação online (Supabase REST), grace period de 7 dias offline, máximo de dispositivos por chave com machine_id. ou dispositivo android.
+Ativação via key única com validação online.
 
 *   **Busca Inteligente:** Encontre qualquer título em segundos usando o motor de busca unificado via TMDB.
 *   **Favoritos:** Salve seus conteúdos para acessar com um clique.
@@ -64,3 +66,5 @@ Ativação via key única com validação online (Supabase REST), grace period d
 Este projeto é distribuído comercialmente via assinatura. 
 ---
 *Dragonbox v1.8.8 — © 2026 PyNEXUS*
+SITE OFICIAL: 
+LOJA OFICIAL DISCORD: https://discord.com/invite/32EpSzEM3j
