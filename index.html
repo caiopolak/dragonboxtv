@@ -1,773 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dragonbox Media Player — Central de Entretenimento Premium para PC</title>
-    <meta name="description" content="Reúna Netflix, Disney+, Prime Video, TV ao vivo e muito mais em uma assinatura única de R$29,90. Player nativo Windows super rápido com MPV Engine e PIP.">
-    <meta name="keywords" content="dragonbox, media player, streaming, IPTV, filmes, séries, TV ao vivo, Windows, PyQt6, catalogo premium, Kodi alternativo">
-    <meta name="author" content="Dragonbox Media">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph (Facebook / LinkedIn) -->
-    <meta property="og:title" content="Dragonbox — O Cinema Particular no seu PC">
-    <meta property="og:description" content="Substitua múltiplas assinaturas de streaming por um único player nativo Windows. Rápido, leve e atualizado diariamente.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="icon.png">
-    <meta property="og:locale" content="pt_BR">
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Dragonbox Media Player",
-        "operatingSystem": "Windows 10/11",
-        "applicationCategory": "MultimediaApplication",
-        "description": "Player nativo para Windows construído em PyQt6 que consolida diversos serviços de streaming em um único lugar.",
-        "offers": {
-            "@type": "Offer",
-            "price": "29.90",
-            "priceCurrency": "BRL",
-            "availability": "https://schema.org/InStock"
+    <title>DRAGONBOXTV</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
         }
-    }
-    </script>
 
-    <link rel="icon" type="image/png" href="icon.png">
+        .container {
+            max-width: 700px;
+            padding: 40px;
+        }
 
-    <!-- AOS (Animate on Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        h1 {
+            font-size: 3rem;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        .dragons {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+        p {
+            font-size: 1.3rem;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #4fc3f7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <div class="dragons">🐉🐲🐉</div>
 
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">
-                <img src="icon.png" alt="Dragonbox Logo" class="nav-icon">
-                <span>Dragonbox</span>
-            </a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#inicio" class="nav-link">Início</a></li>
-                <li><a href="#simulador" class="nav-link">Demonstração</a></li>
-                <li><a href="#recursos" class="nav-link">Recursos</a></li>
-                <li><a href="#galeria" class="nav-link">Capturas</a></li>
-                <li><a href="#planos" class="nav-link">Preços</a></li>
-                <li><a href="#revenda" class="nav-link">Parceiros</a></li>
-                <li><a href="#faq" class="nav-link">FAQ</a></li>
-                <li><a href="https://discord.gg/32EpSzEM3j" target="_blank" class="nav-cta"><i class="fab fa-discord"></i> Discord VIP</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
-    </nav>
+        <h1>DRAGONBOXTV</h1>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="hero-poster-wall"></div>
-        <div class="hero-glow hero-glow-1"></div>
-        <div class="hero-glow hero-glow-2"></div>
-        
-        <div class="container hero-container">
-            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <span class="hero-badge"><i class="fas fa-play-circle"></i> NOVO CATÁLOGO 4K DISPONÍVEL</span>
-                <h1 class="hero-title">Sua Central de <span class="accent-gradient">Entretenimento</span> Definitiva</h1>
-                <p class="hero-subtitle">Cansado de pagar múltiplas assinaturas todo mês? Tenha todos os canais de TV, filmes, séries e animes reunidos em um único aplicativo standalone nativo para Windows (PyQt6).</p>
-                
-                <div class="hero-price">
-                    <span class="price-label">Assinatura Única</span>
-                    <div class="price-value">
-                        <span class="price-currency">R$</span>
-                        <span class="price-amount">29,90</span>
-                        <span class="price-period">/mês</span>
-                    </div>
-                </div>
+        <div class="box">
+            <p>Nosso site mudou!</p>
 
-                <div class="hero-actions">
-                    <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-primary btn-lg pulse-btn">
-                        <i class="fab fa-discord"></i> ADQUIRIR DRAGONBOX
-                    </a>
-                    <a href="#simulador" class="btn btn-outline btn-lg">
-                        <i class="fas fa-desktop"></i> Testar Simulador
-                    </a>
-                </div>
-
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-num" data-count="2500">0</span>
-                        <span class="stat-label">Usuários Ativos</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num" data-count="12000">0</span>
-                        <span class="stat-label">Títulos em HD/4K</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-num" data-count="100">0</span>
-                        <span class="stat-label">% Uptime Servidores</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <div class="hero-mockup">
-                    <img src="capturas de tela/Captura de tela 2026-06-17 163555.png" alt="Dragonbox PyQt6 Interface" class="mockup-img">
-                </div>
-            </div>
-        </div>
-
-        <div class="scroll-hint">
-            <span>Explorar Recursos</span>
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
-
-    <!-- Simulador Section (Interactive Mockup) -->
-    <section class="simulador" id="simulador">
-        <div class="simulador-container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag"><i class="fas fa-terminal"></i> INTERFACE NATIVA</span>
-                <h2 class="section-title">Navegue na <span class="accent-gradient">Demonstração</span> do App</h2>
-                <p class="section-desc">Clique nas abas laterais do simulador para experimentar o visual fluido e profissional do aplicativo Dragonbox diretamente do seu navegador.</p>
-            </div>
-
-            <!-- Browser mockup container -->
-            <div class="mockup-app-container" data-aos="zoom-in" data-aos-duration="900">
-                <!-- Top OS window frame details -->
-                <div class="mockup-app-header">
-                    <div class="header-dots">
-                        <span></span><span></span><span></span>
-                    </div>
-                    <div class="header-title">
-                        <i class="fas fa-fire"></i> DRAGONBOX PLAYER v1.8.5 - ESTÁVEL
-                    </div>
-                    <div class="header-window-ops"></div>
-                </div>
-
-                <!-- Main Desktop App layout -->
-                <div class="mockup-app-body">
-                    <!-- Left Sidebar navigation -->
-                    <aside class="mockup-app-sidebar">
-                        <div>
-                            <div class="sidebar-logo">
-                                <img src="icon.png" alt="Icon">
-                                <span>Dragonbox</span>
-                            </div>
-                            <div class="sidebar-menu">
-                                <button class="sidebar-btn active" data-target="home">
-                                    <i class="fas fa-home"></i> Início
-                                </button>
-                                <button class="sidebar-btn" data-target="movies">
-                                    <i class="fas fa-film"></i> Catálogo Filmes
-                                </button>
-                                <button class="sidebar-btn" data-target="tv">
-                                    <i class="fas fa-tv"></i> TV ao Vivo (EPG)
-                                </button>
-                                <button class="sidebar-btn" data-target="pip">
-                                    <i class="fas fa-window-restore"></i> Miniplayer PIP
-                                </button>
-                                <button class="sidebar-btn" data-target="settings">
-                                    <i class="fas fa-sliders-h"></i> Configurações
-                                </button>
-                            </div>
-                        </div>
-                        <div class="sidebar-footer">
-                            <div class="sidebar-status">
-                                <span></span> CONECTADO
-                            </div>
-                        </div>
-                    </aside>
-
-                    <!-- Right Display Screen containing images -->
-                    <main class="mockup-app-screen">
-                        <!-- Screen: Home -->
-                        <div class="screen-content active" id="screen-home">
-                            <img src="capturas de tela/Captura de tela 2026-06-17 163555.png" alt="Dragonbox Home Screen" class="mockup-screen-img">
-                            <button class="screen-overlay-btn" onclick="document.querySelector('[data-target=\'movies\']').click()">
-                                <i class="fas fa-play"></i> Explorar Filmes
-                            </button>
-                        </div>
-
-                        <!-- Screen: Movies -->
-                        <div class="screen-content" id="screen-movies">
-                            <img src="capturas de tela/Captura de tela 2026-05-08 025909.png" alt="Dragonbox Movies Catalog" class="mockup-screen-img">
-                            <button class="screen-overlay-btn" onclick="document.querySelector('[data-target=\'tv\']').click()">
-                                <i class="fas fa-tv"></i> Grade de TV ao Vivo
-                            </button>
-                        </div>
-
-                        <!-- Screen: TV EPG -->
-                        <div class="screen-content" id="screen-tv">
-                            <img src="capturas de tela/Captura de tela 2026-06-17 035156.png" alt="Dragonbox Live TV EPG" class="mockup-screen-img">
-                            <button class="screen-overlay-btn" onclick="document.querySelector('[data-target=\'pip\']').click()">
-                                <i class="fas fa-external-link-alt"></i> Testar Modo PIP
-                            </button>
-                        </div>
-
-                        <!-- Screen: PIP -->
-                        <div class="screen-content" id="screen-pip">
-                            <img src="capturas de tela/Captura de tela 2026-05-10 214405.png" alt="Dragonbox PIP Picture-in-Picture" class="mockup-screen-img">
-                            <button class="screen-overlay-btn" onclick="document.querySelector('[data-target=\'settings\']').click()">
-                                <i class="fas fa-cog"></i> Ver Opções
-                            </button>
-                        </div>
-
-                        <!-- Screen: Settings -->
-                        <div class="screen-content" id="screen-settings">
-                            <img src="capturas de tela/Captura de tela 2026-05-12 230503.png" alt="Dragonbox Settings Configuration" class="mockup-screen-img">
-                            <button class="screen-overlay-btn" onclick="document.querySelector('[data-target=\'home\']').click()">
-                                <i class="fas fa-home"></i> Voltar ao Início
-                            </button>
-                        </div>
-                    </main>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Recursos Section -->
-    <section class="features" id="recursos">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag"><i class="fas fa-star"></i> DIFERENCIAIS VIP</span>
-                <h2 class="section-title">Tecnologia Standalone de <span class="accent-gradient">Alta Performance</span></h2>
-                <p class="section-desc">Construído em Python/PyQt6 nativo. Sem a lentidão e travamentos dos addons comuns de Kodi.</p>
-            </div>
-
-            <div class="features-grid">
-                <!-- Feature 1 -->
-                <div class="feature-card" data-aos="fade-up">
-                    <div class="feature-icon"><i class="fas fa-rocket"></i></div>
-                    <h3>Performance standalone</h3>
-                    <p>O Dragonbox é um aplicativo executável (.exe) independente. Abre na mesma hora e carrega catálogos gigantes sem congelar ou cair.</p>
-                </div>
-                <!-- Feature 2 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon"><i class="fas fa-palette"></i></div>
-                    <h3>Interface Arctic Horizon 2</h3>
-                    <p>Visual glassmorphic limpo e ultra-fluido, projetado para parecer um streaming de luxo. Sem poluição visual ou banners intrusivos.</p>
-                </div>
-                <!-- Feature 3 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon"><i class="fas fa-video"></i></div>
-                    <h3>Motor MPV Turbo</h3>
-                    <p>Usa um dos motores de vídeo mais rápidos da atualidade com aceleração nativa por hardware. Vídeos 4K e HEVC rodam com perfeição.</p>
-                </div>
-                <!-- Feature 4 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon"><i class="fas fa-tv"></i></div>
-                    <h3>TV ao Vivo & Esportes</h3>
-                    <p>Canais nacionais e mundiais integrados com EPG (Guia de Programação) integrado em tempo real. Acompanhe esportes sem delays.</p>
-                </div>
-                <!-- Feature 5 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="feature-icon"><i class="fas fa-search"></i></div>
-                    <h3>Busca Unificada TMDB</h3>
-                    <p>Busque qualquer título em segundos. O motor de busca inteligente vasculha fontes múltiplas e apresenta sinopse, elenco e trailers.</p>
-                </div>
-                <!-- Feature 6 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="feature-icon"><i class="fas fa-window-restore"></i></div>
-                    <h3>Miniplayer Flutuante (PIP)</h3>
-                    <p>Assista aos seus episódios favoritos em uma miniatura que fica por cima de qualquer aplicativo. Continue assistindo enquanto trabalha.</p>
-                </div>
-                <!-- Feature 7 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="feature-icon"><i class="fas fa-robot"></i></div>
-                    <h3>Integração com Discord Bot</h3>
-                    <p>Módulo de automação inteligente e rastreamento de mídia. Veja estatísticas do que assistiu e receba notificações direto no servidor.</p>
-                </div>
-                <!-- Feature 8 -->
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
-                    <div class="feature-icon"><i class="fas fa-sync-alt"></i></div>
-                    <h3>Atualizações em Nuvem</h3>
-                    <p>O aplicativo verifica novidades automaticamente através de APIs em nuvem. Conteúdo novo surge sem precisar reinstalar o player.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Vitrine de Interfaces (Netflix Carrossel Rows) -->
-    <section class="gallery" id="galeria">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag"><i class="fas fa-images"></i> GALERIA VIP</span>
-                <h2 class="section-title">Capturas de Tela do <span class="accent-gradient">Aplicativo</span></h2>
-                <p class="section-desc">Clique nos cards abaixo para visualizar a riqueza de detalhes e a elegância da interface real rodando no Windows 10/11.</p>
-            </div>
-
-            <div class="gallery-filters" data-aos="fade-up">
-                <button class="filter-btn active" data-filter="all">Todas</button>
-                <button class="filter-btn" data-filter="home">Home</button>
-                <button class="filter-btn" data-filter="movies">Filmes</button>
-                <button class="filter-btn" data-filter="tv">Canais & EPG</button>
-                <button class="filter-btn" data-filter="player">Player & PIP</button>
-                <button class="filter-btn" data-filter="settings">Configurações</button>
-            </div>
-
-            <!-- Horizontal carousel with controls -->
-            <div class="gallery-row-wrapper" data-aos="fade-up">
-                <button class="gallery-row-control row-prev" aria-label="Slide anterior"><i class="fas fa-chevron-left"></i></button>
-                <div class="gallery-track-viewport" id="gallery-track-viewport">
-                    
-                    <!-- Item 1 -->
-                    <div class="gallery-item" data-category="home">
-                        <img src="capturas de tela/Captura de tela 2026-06-17 163555.png" alt="Interface Principal Redesenhada" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Home de Destaques</span>
-                            <small>Grid elegante de conteúdos em alta</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 2 -->
-                    <div class="gallery-item" data-category="movies">
-                        <img src="capturas de tela/Captura de tela 2026-05-08 025909.png" alt="Catálogo de Filmes em Poster HD" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Catálogo Completo</span>
-                            <small>Navegação vertical fluida</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 3 -->
-                    <div class="gallery-item" data-category="tv">
-                        <img src="capturas de tela/Captura de tela 2026-06-17 035156.png" alt="Grade de Programação EPG em tempo real" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Guia EPG TV</span>
-                            <small>Grade horária de canais ao vivo</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 4 -->
-                    <div class="gallery-item" data-category="tv">
-                        <img src="capturas de tela/Captura de tela 2026-06-17 035402.png" alt="Canais de TV ao Vivo Mundiais" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Canais e Categorias</span>
-                            <small>Listagem de TV organizada</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 5 -->
-                    <div class="gallery-item" data-category="player">
-                        <img src="capturas de tela/Captura de tela 2026-05-10 214405.png" alt="Player executando em modo Miniplayer PIP" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Modo Miniplayer PIP</span>
-                            <small>Assista flutuando acima das janelas</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 6 -->
-                    <div class="gallery-item" data-category="settings">
-                        <img src="capturas de tela/Captura de tela 2026-05-12 230503.png" alt="Menu de Ajustes do Player" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Ajustes do Sistema</span>
-                            <small>Aceleração de HW e cache</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 7 -->
-                    <div class="gallery-item" data-category="movies">
-                        <img src="capturas de tela/Captura de tela 2026-05-10 033636.png" alt="Ficha de Informações TMDB" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Ficha de Conteúdo</span>
-                            <small>Sinopses, elenco e links do TMDB</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 8 -->
-                    <div class="gallery-item" data-category="home">
-                        <img src="capturas de tela/Captura de tela 2026-06-17 171824.png" alt="Menu Lateral Aberto" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Menu de Navegação</span>
-                            <small>Acesso rápido às categorias</small>
-                        </div>
-                    </div>
-
-                    <!-- Item 9 -->
-                    <div class="gallery-item" data-category="player">
-                        <img src="capturas de tela/Captura de tela 2026-05-11 190921.png" alt="Reprodutor Integrado com MPV" loading="lazy">
-                        <div class="gallery-overlay">
-                            <span><i class="fas fa-play"></i> Motor de Vídeo MPV</span>
-                            <small>Suporte nativo a HEVC sem travamento</small>
-                        </div>
-                    </div>
-                </div>
-                <button class="gallery-row-control row-next" aria-label="Próximo slide"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Lightbox Modal -->
-    <div class="lightbox" id="lightbox">
-        <button class="lightbox-close" id="lightbox-close" aria-label="Fechar galeria"><i class="fas fa-times"></i></button>
-        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Imagem anterior"><i class="fas fa-chevron-left"></i></button>
-        <img src="" alt="Ampliado" class="lightbox-img" id="lightbox-img">
-        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Próxima imagem"><i class="fas fa-chevron-right"></i></button>
-        <div class="lightbox-caption" id="lightbox-caption"></div>
-    </div>
-
-    <!-- Pricing Section -->
-    <section class="plans" id="planos">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag"><i class="fas fa-credit-card"></i> ASSINATURAS</span>
-                <h2 class="section-title">Escolha o <span class="accent-gradient">Acesso</span> Ideal</h2>
-                <p class="section-desc">Todos os planos incluem catálogo completo HD/4K, TV ao vivo com EPG, bot de rastreamento de mídia e suporte VIP.</p>
-            </div>
-
-            <!-- Monthly / Quarterly / Yearly Period Toggle -->
-            <div class="plans-toggle" data-aos="fade-up">
-                <button class="toggle-btn active" data-period="monthly">Mensal</button>
-                <button class="toggle-btn" data-period="quarterly">Trimestral</button>
-                <button class="toggle-btn" data-period="yearly">Anual</button>
-            </div>
-
-            <div class="plans-grid">
-                <!-- Plan 1: Basic -->
-                <div class="plan-card" data-aos="fade-up" data-price-m="19.90" data-price-q="49.90" data-price-y="179.00">
-                    <div class="plan-header">
-                        <span class="plan-name">Basic</span>
-                        <div class="plan-price">
-                            <span class="plan-currency">R$</span>
-                            <span class="plan-amount" data-monthly="19,90" data-quarterly="49,90" data-yearly="179,00">19,90</span>
-                            <span class="plan-period" data-monthly="/mês" data-quarterly="/trim" data-yearly="/ano">/mês</span>
-                        </div>
-                        <span class="plan-saving" data-monthly="" data-quarterly="Economize 16%" data-yearly="Economize 25%"></span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Catálogo Completo HD</li>
-                        <li><i class="fas fa-check"></i> 1 Dispositivo Simultâneo</li>
-                        <li><i class="fas fa-check"></i> Canais de TV ao Vivo + EPG</li>
-                        <li><i class="fas fa-check"></i> Bot de Rastreamento Discord</li>
-                        <li><i class="fas fa-check"></i> Suporte Completo 24/7</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Modo Miniplayer PIP</li>
-                        <li class="disabled"><i class="fas fa-times"></i> Conteúdos em 4K HDR</li>
-                    </ul>
-                    <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-outline plan-btn">Assinar</a>
-                </div>
-
-                <!-- Plan 2: Premium (Featured) -->
-                <div class="plan-card featured" data-aos="fade-up" data-aos-delay="100" data-price-m="29.90" data-price-q="79.90" data-price-y="289.00">
-                    <div class="plan-badge">Mais Recomendado</div>
-                    <div class="plan-header">
-                        <span class="plan-name">Premium</span>
-                        <div class="plan-price">
-                            <span class="plan-currency">R$</span>
-                            <span class="plan-amount" data-monthly="29,90" data-quarterly="79,90" data-yearly="289,00">29,90</span>
-                            <span class="plan-period" data-monthly="/mês" data-quarterly="/trim" data-yearly="/ano">/mês</span>
-                        </div>
-                        <span class="plan-saving" data-monthly="" data-quarterly="Economize 11%" data-yearly="Economize 19%"></span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Catálogo Completo HD/4K</li>
-                        <li><i class="fas fa-check"></i> 1 Dispositivo Simultâneo</li>
-                        <li><i class="fas fa-check"></i> Canais de TV ao Vivo + EPG</li>
-                        <li><i class="fas fa-check"></i> Bot de Rastreamento Discord</li>
-                        <li><i class="fas fa-check"></i> Modo Miniplayer PIP ativo</li>
-                        <li><i class="fas fa-check"></i> Suporte prioritário via Discord</li>
-                        <li><i class="fas fa-check"></i> Servidores VIP Dedicados</li>
-                    </ul>
-                    <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-primary plan-btn">Assinar</a>
-                </div>
-
-                <!-- Plan 3: Master -->
-                <div class="plan-card" data-aos="fade-up" data-aos-delay="200" data-price-m="44.90" data-price-q="119.90" data-price-y="429.00">
-                    <div class="plan-header">
-                        <span class="plan-name">Master</span>
-                        <div class="plan-price">
-                            <span class="plan-currency">R$</span>
-                            <span class="plan-amount" data-monthly="44,90" data-quarterly="119,90" data-yearly="429,00">44,90</span>
-                            <span class="plan-period" data-monthly="/mês" data-quarterly="/trim" data-yearly="/ano">/mês</span>
-                        </div>
-                        <span class="plan-saving" data-monthly="" data-quarterly="Economize 11%" data-yearly="Economize 20%"></span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Catálogo Completo HD/4K</li>
-                        <li><i class="fas fa-check"></i> 2 Dispositivos Simultâneos</li>
-                        <li><i class="fas fa-check"></i> Canais de TV ao Vivo + EPG</li>
-                        <li><i class="fas fa-check"></i> Bot + Rastreamento Premium</li>
-                        <li><i class="fas fa-check"></i> Modo Miniplayer PIP ativo</li>
-                        <li><i class="fas fa-check"></i> Suporte VIP dedicado 24/7</li>
-                        <li><i class="fas fa-check"></i> Acesso antecipado a atualizações</li>
-                    </ul>
-                    <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-outline plan-btn">Assinar</a>
-                </div>
-
-                <!-- Plan 4: Reseller Licensing -->
-                <div class="plan-card" data-aos="fade-up" data-aos-delay="300" data-price-m="79.90" data-price-q="199.90" data-price-y="699.00">
-                    <div class="plan-header">
-                        <span class="plan-name">Licenças Revenda</span>
-                        <div class="plan-price">
-                            <span class="plan-currency">R$</span>
-                            <span class="plan-amount" data-monthly="79,90" data-quarterly="199,90" data-yearly="699,00">79,90</span>
-                            <span class="plan-period" data-monthly="/mês" data-quarterly="/trim" data-yearly="/ano">/mês</span>
-                        </div>
-                        <span class="plan-saving" data-monthly="" data-quarterly="Economize 16%" data-yearly="Economize 27%"></span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><i class="fas fa-check"></i> Painel de Controle Integrado</li>
-                        <li><i class="fas fa-check"></i> 3 chaves de licença inclusas</li>
-                        <li><i class="fas fa-check"></i> Material de Apoio & Banners</li>
-                        <li><i class="fas fa-check"></i> Suporte de Gerente Dedicado</li>
-                        <li><i class="fas fa-check"></i> Painel White Label ativo</li>
-                        <li><i class="fas fa-check"></i> Geração de chaves instantânea</li>
-                        <li><i class="fas fa-check"></i> Alta taxa de fidelização</li>
-                    </ul>
-                    <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-outline plan-btn">Contatar Gerente</a>
-                </div>
-            </div>
-
-            <!-- Plan 5: Lifetime VIP Offer -->
-            <div class="plan-lifetime" data-aos="fade-up">
-                <div class="lifetime-card">
-                    <div class="lifetime-icon"><i class="fas fa-crown"></i></div>
-                    <div class="lifetime-info">
-                        <h3>Plano Vitalício Premium</h3>
-                        <p>Pagamento único. Sem renovações, sem boletos mensais. Todos os futuros recursos e catálogos inclusos para sempre.</p>
-                    </div>
-                    <div class="lifetime-price">
-                        <span class="lifetime-value">R$ 497</span>
-                        <span class="lifetime-label">Pagamento Único</span>
-                    </div>
-                    <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-gold btn-lg">
-                        <i class="fas fa-gem"></i> Adquirir Acesso Vitalício
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Reseller Section (VIP Panel) -->
-    <section class="reseller" id="revenda">
-        <div class="container">
-            <div class="reseller-card" data-aos="fade-up">
-                <div class="reseller-content">
-                    <span class="section-tag"><i class="fas fa-handshake"></i> REVENDEDORES</span>
-                    <h2 class="section-title">Seja um Parceiro <span class="gold-gradient">Oficial Dragonbox</span></h2>
-                    <p>Ganhe uma excelente fonte de receita vendendo o player multimídia mais desejado do mercado. Entregue um painel simplificado, chaves de ativação na mesma hora e suporte total com o seu logo.</p>
-                    
-                    <ul class="reseller-benefits">
-                        <li><i class="fas fa-check-circle"></i> Gerente exclusivo no Discord</li>
-                        <li><i class="fas fa-check-circle"></i> White Label completo</li>
-                        <li><i class="fas fa-check-circle"></i> Banners e criativos prontos</li>
-                        <li><i class="fas fa-check-circle"></i> Margem de lucro de mais de 100%</li>
-                    </ul>
-
-                    <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-gold btn-lg">
-                        <i class="fas fa-paper-plane"></i> Falar com Suporte de Parcerias
-                    </a>
-                </div>
-                <div class="reseller-visual">
-                    <i class="fas fa-handshake"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Accordion Section (Netflix Style) -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag"><i class="fas fa-question-circle"></i> FAQ</span>
-                <h2 class="section-title">Perguntas <span class="text-gradient">Frequentes</span></h2>
-            </div>
-
-            <div class="faq-list" data-aos="fade-up">
-                <!-- Question 1 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>O que faz do Dragonbox diferente do Kodi ou de Addons comuns?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>O Dragonbox é um aplicativo nativo para Windows (escrito em Python 3.11 + PyQt6) e totalmente standalone. Diferente do Kodi, ele não depende de configurações de addons pesados que travam com facilidade. Ele é instalado como um único executável leve, inicia instantaneamente e possui otimizações específicas de aceleração de hardware para o Windows.</p>
-                    </div>
-                </div>
-
-                <!-- Question 2 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Como funciona a liberação do acesso e o pagamento?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Aceitamos pagamentos instantâneos via Pix no nosso painel de controle do Discord. A liberação do código de licença é automática após a confirmação. O plano básico custa apenas R$ 19,90 e o plano Premium R$ 29,90, sem contratos de fidelidade — cancele quando quiser.</p>
-                    </div>
-                </div>
-
-                <!-- Question 3 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Preciso ter um computador muito potente?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Não! Como utilizamos a aceleração nativa por hardware com base no motor de vídeo MPV, o aplicativo consome pouquíssima CPU. O requisito mínimo é o Windows 10 ou 11 (64-bits) e 4GB de RAM para reprodução de títulos em HD. Para melhor experiência em 4K HDR, sugerimos 8GB de RAM.</p>
-                    </div>
-                </div>
-
-                <!-- Question 4 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Como funciona o Miniplayer PIP (Picture-in-Picture)?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>A partir do plano Premium, você pode reduzir o player para uma janela pequena flutuante. Ela ficará fixada "Sempre no Topo" no canto do monitor. Você poderá trabalhar, estudar ou programar no PC enquanto assiste aos canais de TV ao vivo ou filmes sem interrupção.</p>
-                    </div>
-                </div>
-
-                <!-- Question 5 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>O aplicativo recebe novos filmes e séries automaticamente?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sim! Nossa arquitetura sincroniza a listagem de filmes, animes e episódios de séries com bases de dados na nuvem diariamente. Novos episódios e lançamentos de cinema surgem de forma nativa no catálogo sem que você precise baixar arquivos ou atualizar o instalador manualmente.</p>
-                    </div>
-                </div>
-
-                <!-- Question 6 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <span>Como posso revender as assinaturas do Dragonbox?</span>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Oferecemos o plano Revenda a partir de R$ 79,90/mês com 3 chaves de licença Premium mensais, painel de controle e painel administrativo de usuários. Você revende cada chave pelo preço que desejar (sugerimos R$ 29,90 a R$ 44,90) e tem um lucro recorrente de até R$ 24,81 a R$ 54,81 por mês. Damos todo o suporte em banners, material de divulgação, e atendimento técnico via Discord.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag"><i class="fas fa-quote-left"></i> DEPOIMENTOS</span>
-                <h2 class="section-title">O que dizem os <span class="text-gradient">Assinantes</span></h2>
-                <p class="section-desc">Veja a opinião de alguns dos nossos mais de 2.500 usuários satisfeitos.</p>
-            </div>
-
-            <div class="testimonial-carousel" data-aos="fade-up">
-                <div class="testimonial-track" id="testimonial-track">
-                    <!-- Slide 1 -->
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">"Melhor player disparado. Parei de usar vários streamings separados e passei a usar apenas o Dragonbox. A interface nativa abre muito rápido e os canais de esportes ao vivo rodam sem lag."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar"><i class="fas fa-user-astronaut"></i></div>
-                            <div>
-                                <span class="testimonial-name">Felipe Albuquerque</span>
-                                <span class="testimonial-role">Assinante Premium</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">"Comprei a assinatura vitalícia após testar por um mês. O recurso de Miniplayer (PIP) é maravilhoso, trabalho como designer o dia todo olhando para o monitor e acompanho minhas séries flutuando no canto da tela."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar"><i class="fas fa-user-ninja"></i></div>
-                            <div>
-                                <span class="testimonial-name">Mariana Vasconcelos</span>
-                                <span class="testimonial-role">Assinante Vitalício</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="testimonial-card">
-                        <div class="testimonial-stars">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <p class="testimonial-text">"Uso o Dragonbox como revendedor e a aceitação dos clientes é de 100%. Eles ficam impressionados com o visual parecido com a Netflix. O instalador único resolve toda a dor de cabeça com suporte."</p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar"><i class="fas fa-user-tie"></i></div>
-                            <div>
-                                <span class="testimonial-name">Jorge Renato</span>
-                                <span class="testimonial-role">Revendedor Master</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-dots" id="testimonial-dots"></div>
-                <button class="testimonial-nav testimonial-prev" aria-label="Voltar depoimento"><i class="fas fa-chevron-left"></i></button>
-                <button class="testimonial-nav testimonial-next" aria-label="Avançar depoimento"><i class="fas fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section class="cta-final">
-        <div class="container">
-            <div class="cta-card" data-aos="zoom-in">
-                <span class="cta-flash"><i class="fas fa-fire"></i> LOTE PROMOCIONAL DE INAUGURAÇÃO</span>
-                <h2>Transforme seu PC em uma Tela de Cinema</h2>
-                <p>Acesse o maior acervo de entretenimento digital hoje mesmo. Liberação instantânea da sua chave de licença no Discord.</p>
-                <a href="https://discord.gg/32EpSzEM3j" target="_blank" class="btn btn-primary btn-lg pulse-btn">
-                    <i class="fab fa-discord"></i> COMEÇAR MEU TESTE VIP AGORA
+            <p>
+                🌐 Novo site:<br>
+                <a href="https://dragonboxtv.github.io/site/" target="_blank">
+                    https://dragonboxtv.github.io/site/
                 </a>
-                <span class="cta-meta">🚀 ativação imediata via pix • cancelamento instantâneo sem taxas adicionais</span>
-            </div>
+            </p>
+
+            <p>
+                💬 Loja / Discord:<br>
+                <a href="https://discord.com/invite/32EpSzEM3j" target="_blank">
+                    https://discord.com/invite/32EpSzEM3j
+                </a>
+            </p>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="icon.png" alt="Dragonbox Premium" class="footer-icon">
-                    <h3>Dragonbox Media</h3>
-                    <p>A central de streaming de alta fidelidade nativa para Windows. Beleza, simplicidade e velocidade reunidas em um único executável.</p>
-                    <div class="footer-social">
-                        <a href="https://discord.gg/32EpSzEM3j" target="_blank" aria-label="Discord Oficial"><i class="fab fa-discord"></i></a>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <h4>Navegação</h4>
-                    <ul>
-                        <li><a href="#inicio">Início</a></li>
-                        <li><a href="#simulador">Simulador App</a></li>
-                        <li><a href="#recursos">Recursos VIP</a></li>
-                        <li><a href="#planos">Planos & Preços</a></li>
-                        <li><a href="#faq">Perguntas Frequentes</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-info">
-                    <h4>Atendimento VIP</h4>
-                    <p><i class="fas fa-clock"></i> Suporte 24 Horas — Segunda a Domingo</p>
-                    <p><i class="fab fa-discord"></i> Atendimento via Discord: resposta imediata</p>
-                    <p><i class="fas fa-laptop-code"></i> Compatível com Windows 10 / Windows 11</p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Dragonbox Media Player. Todos os direitos reservados.</p>
-                <p class="dev-tag">Developed with <span>&hearts;</span> for Excellence</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+        <p style="margin-top:30px;">🐉 Obrigado por continuar com a DRAGONBOXTV! 🐉</p>
+    </div>
 </body>
 </html>
