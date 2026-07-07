@@ -3,12 +3,11 @@
 
 Media player desktop standalone, com navegação visual, reprodução MPV, EPG, DNS bypass
 e licenciamento por assinatura via whatsapp ou discord.
-
-[#CLIQUE AQUI PARA ACESSAR NOSSO SITE](https://dragonboxtv.github.io/site/)
--
-[#CLIQUE AQUI PARA ACESSAR NOSSA LOJA NO DISCORD](https://discord.com/invite/32EpSzEM3j)
-
 ---
+[#CLIQUE AQUI PARA ACESSAR NOSSO SITE](https://dragonbox.site/)
+-
+[#CLIQUE AQUI PARA ACESSAR NOSSO DISCORD](https://discord.com/invite/32EpSzEM3j)
+-
 
 ## Arquitetura
 
