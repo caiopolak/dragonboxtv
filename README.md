@@ -64,9 +64,10 @@ Ativação via key única com validação online.
 *   **Aceleração de Hardware:** Suporte a HEVC/H.265 para máxima qualidade com mínimo uso de CPU.
 ```
 ---
-## Licenciamento
-Este projeto é distribuído comercialmente via assinatura. 
+## 📄 Direitos Autorais e Licenciamento
+© 2026 Nexus Media Studio. Todos os direitos reservados.
+Este software é um produto de código fechado e é distribuído comercialmente via assinatura. 
+É terminantemente proibida a engenharia reversa, sub-licenciamento, cópia ou distribuição sem a autorização prévia por escrito.
 ---
 *Dragonbox — © 2026 PyNEXUS*
-SITE OFICIAL: https://dragonboxtv.github.io/site/
-LOJA OFICIAL DISCORD: https://discord.com/invite/32EpSzEM3j
+SITE OFICIAL: https://dragonbox.site/
