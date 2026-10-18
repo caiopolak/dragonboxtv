@@ -1,73 +1,63 @@
 ![Dragonbox Media Streaming](https://raw.githubusercontent.com/dragonboxtv/site/refs/heads/main/dragonbox_viewer1.png)
-# Dragonbox 2026 — Media Streaming Desktop App
 
-Media player desktop standalone, com navegação visual, reprodução MPV, EPG, DNS bypass
-e licenciamento por assinatura via whatsapp ou discord.
----
-[#CLIQUE AQUI PARA ACESSAR NOSSO SITE](https://dragonbox.site/)
--
-[#CLIQUE AQUI PARA ACESSAR NOSSO DISCORD](https://discord.com/invite/32EpSzEM3j)
--
+# Dragonbox 2026
 
-## Arquitetura
+### Experiência de mídia para desktop
 
-```
-# Dragonbox Media Player — Experiência Premium de Entretenimento
+O **Dragonbox** é um aplicativo desktop para organizar e reproduzir conteúdos de mídia a partir de fontes autorizadas. Com uma experiência visual fluida, integração com EPG e motor MPV, ele foi criado para quem valoriza praticidade, desempenho e uma interface elegante.
 
-O **Dragonbox** é a solução definitiva para quem busca uma central de mídia potente,
- com todos conteúdos de streamings e canais de tv ao vivo, elegante e extremamente fácil de usar.
+[🌐 Acessar o site](https://dragonbox.site/) · [💬 Entrar no Discord](https://discord.com/invite/32EpSzEM3j)
 
 ---
 
-## 💎 Diferenciais que Vendem
+## Destaques
 
-### 🚀 Performance "Standalone"
-Diferente de addons pesados que dependem do Kodi, o Dragonbox é um executável leve.
-Abre instantaneamente e processa listas de milhares de itens sem engasgos.
+| Recurso | O que entrega |
+| --- | --- |
+| ⚡ **Desempenho nativo** | Aplicativo standalone, leve e rápido para iniciar e navegar. |
+| 🎨 **Interface moderna** | Experiência visual limpa, responsiva e focada no conteúdo. |
+| 📺 **TV ao vivo e EPG** | Guia de programação para acompanhar canais e eventos disponíveis nas suas fontes. |
+| 🎬 **Motor MPV** | Reprodução com aceleração de hardware quando suportada pelo dispositivo. |
+| 🔎 **Busca unificada** | Encontre títulos e organize a navegação em um só lugar. |
+| 🔑 **Licenciamento por assinatura** | Ativação por chave com validação online. |
 
-### 🎨 Interface Ultra-Moderna
-Design limpo, minimalista e focado na experiência do usuário.
-Navegue por seus filmes, séries e canais favoritos com fluidez visual digna de grandes serviços de streaming (Netflix/Disney+).
+## Funcionalidades
 
-### 🎬 O Poder do cinema na sua mão.
-Acesso direto ao catálogo mais completo do Brasil.
-Filmes em 4K, Séries atualizadas diariamente, Animes, Desenhos e Novelas — tudo com resolvers VIP que garantem a melhor fonte disponível.
+### Picture-in-Picture e multitarefa
 
-### 📺 TV Ao Vivo e Esportes
-Guia de programação (EPG) em tempo real.
-Nunca perca um jogo ou seu programa favorito com a integração de canais mundiais e nacionais.
+Use o mini player independente para continuar assistindo enquanto navega pelo aplicativo ou trabalha em outras tarefas. Ajuste o tamanho e a posição conforme sua preferência.
 
-### ⚡ Motor MPV Turbo
-Utilizamos o motor de vídeo MPV, o mesmo usado por profissionais, garantindo aceleração de hardware e reprodução suave até em conexões instáveis.
+### Fila de reprodução
 
-## 🌟 Funcionalidades Principais
+Crie sua própria sequência de conteúdos, reordene itens e acompanhe os próximos títulos diretamente na interface.
 
-### 🖼️ Miniplayer (PIP) e Multitarefa
-Player independente que não bloqueia a interface. Assista vídeos em modo Picture-in-Picture enquanto navega pelo app, trabalha ou acessa outros programas. Redimensione e posicione nos cantos da tela via configurações.
+### Personalização visual
 
-### 📋 Fila Inteligente (Queue)
-Adicione filmes, episódios e canais a uma fila de reprodução. Acompanhe os próximos itens na Home ou na Mini Player Bar. Reordene ou remova itens. Reprodução automática sequencial sem intervenção do usuário.
+Revendedores podem personalizar thumbnails e artes das categorias por meio de um arquivo JSON, sem alterar o código do aplicativo. O projeto inclui a ferramenta `tools/scan_menus.py` para ajudar a identificar imagens genéricas ou ausentes.
 
-### 🎨 Menu Art Registry (Branding Customizado)
-Todo revendedor pode personalizar thumbnails e fanart de cada menu/categoria via arquivo JSON — sem modificar código. Sistema com fallback inteligente e suporte a acentos. Inclui ferramenta `tools/scan_menus.py` para diagnosticar thumbnails genéricas ou ausentes.
+### Fontes e reprodução
 
-### 🔓 DNS Bypass Nativo (Sem VPN)
-Bypass automático de bloqueio de DNS de operadoras (Claro, Vivo, Oi, etc.). Usa DNS over HTTPS para resolver servidores de streaming bloqueados. Funciona tanto no scraping quanto no player MPV.
+O Dragonbox foi desenvolvido para funcionar com conteúdos e serviços que o usuário tenha direito de acessar. A disponibilidade e a qualidade podem variar conforme a fonte e a conexão.
 
-### 🔑 Sistema de Licenciamento por Assinatura
-Ativação via key única com validação online.
-
-*   **Busca Inteligente:** Encontre qualquer título em segundos usando o motor de busca unificado via TMDB.
-*   **Favoritos:** Salve seus conteúdos para acessar com um clique.
-*   **Histórico de Reprodução:** Saiba exatamente onde parou em cada filme ou episódio.
-*   **Multi-Fonte:** Fallback automático — se um servidor cair, o Dragonbox busca outro instantaneamente.
-*   **Aceleração de Hardware:** Suporte a HEVC/H.265 para máxima qualidade com mínimo uso de CPU.
-```
 ---
-## 📄 Direitos Autorais e Licenciamento
+
+## Requisitos
+
+- Windows compatível com o aplicativo
+- Conexão com a internet
+- Chave de licença ativa
+
+## Suporte
+
+- Site: [dragonbox.site](https://dragonbox.site/)
+- Comunidade: [Discord](https://discord.com/invite/32EpSzEM3j)
+
+---
+
+## Direitos autorais e licenciamento
+
 © 2026 Nexus Media Studio. Todos os direitos reservados.
-Este software é um produto de código fechado e é distribuído comercialmente via assinatura. 
-É terminantemente proibida a engenharia reversa, sub-licenciamento, cópia ou distribuição sem a autorização prévia por escrito.
----
-*Dragonbox — © 2026 PyNEXUS*
-SITE OFICIAL: https://dragonbox.site/
+
+Este é um software comercial de código fechado, distribuído mediante licença. É proibida a cópia, redistribuição, sublicenciamento ou engenharia reversa sem autorização prévia e por escrito.
+
+<sub>Dragonbox · PyNEXUS</sub>
