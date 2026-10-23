@@ -54,10 +54,10 @@ O Dragonbox foi desenvolvido para funcionar com conteúdos e serviços que o usu
 
 ---
 
-## Direitos autorais e licenciamento
+## Direitos autorais e licença
 
-© 2026 Nexus Media Studio. Todos os direitos reservados.
+O aviso proprietário em [LICENSE](LICENSE) cobre apenas materiais originais efetivamente criados pelo titular indicado. Marcas, serviços, imagens e conteúdo de terceiros permanecem sob os direitos de seus titulares e não recebem licença por este repositório.
 
-Este é um software comercial de código fechado, distribuído mediante licença. É proibida a cópia, redistribuição, sublicenciamento ou engenharia reversa sem autorização prévia e por escrito.
+A publicação deste repositório público permite a visualização e navegação pela plataforma GitHub; não autoriza reutilização comercial, cópia ou redistribuição fora das permissões da plataforma.
 
 <sub>Dragonbox · PyNEXUS</sub>
